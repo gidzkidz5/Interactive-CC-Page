@@ -156,7 +156,10 @@ name.addEventListener('keypress', function(e){
 })
 
 cardNum.addEventListener('keypress', function(e){
-    cardNumText.innerHTML = ( cardNum.value + e.key);    
+     
+    setTimeout(function(){
+        cardNumText.innerHTML = (cardNum.value)
+    },100);  
 })
 
 cardExp[0].addEventListener('keypress', function(e){
