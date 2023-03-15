@@ -137,7 +137,7 @@ form.addEventListener('submit', (e) => {
 
 const continueBtn = document.getElementById('continue');
 continueBtn.addEventListener('click', function(){
-    location.href = '/';
+    window.location.reload();
 })
 
 // const name = document.getElementById('name');
