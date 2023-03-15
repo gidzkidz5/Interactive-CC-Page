@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Hanken+Grotesk:wght@700&family=Inter:wght@800&family=Merriweather&family=Montserrat:wght@400;500;700&family=Outfit:wght@400;700&family=Sacramento&family=Space+Grotesk:wght@500&family=Space+Mono&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Interactive Form</title>
+</head>
+<body>
+<section id="card-preview">
+<div class="front-card">
+  <h1 class="card-num-text">0000 0000 0000 0000</h1>
+  <p class="card-name">Coded by GL</p>
+  <p class="card-exp"><span id="month2">00</span>/<span id="year2">00</span></p>
+</div>
+<div class="back-card">
+  <p id="card-cvc-text">000</p>
+</div>
+</section>
+<section id="start-page" class="inputs">
+  <form action="\" method="GET">
+  <div class="details">
+    <label for="name">Cardholder Name </label><br><br>
+    <input class="user-input" id='name' type="text" placeholder="e.g. Jane Appleseed">
+    <div class="error hide">er</div>
+  </div>
+  <div class="details"> 
+    <label for="card-number">Card Number</label><br><br>
+    <input class="user-input" id='card-number' type="text" maxlength="19" placeholder="e.g. 1234 5678 9123 0000"> 
+    <div class="error hide">er</div>
+  </div>
+
+  <div class="details">
+   <label for="month year"><span>Exp. Date (MM/YY)</span></label> <label for="CVC" id="CVC1"><span>CVC</span></label><br><br>
+   <input class='user-input2' id='month' type="text" maxlength="2" placeholder="MM">
+   <input class='user-input2' id='year'  type="text" maxlength="2" placeholder="YY">
+  
+  
+    <input class='user-input2' id='CVC' type='text' maxlength="4" placeholder="e.g. 123"><br>
+    <div class="error2">
+    <div class="error hide" id="date">er</div>
+    <div class="error hide" id="security">ere2</div>
+    </div>
+  </div>
+  <button class="btn" type="submit">Confirm</button>
+</form>
+</section>
+  <!-- Completed state start -->
+<div class=" hide success" id="finish-page">
+  <img src="images/icon-complete.svg" alt="">
+  <h1>Thank you!</h1>
+  <p>We've added your card details</p>
+  <button class="btn" id='continue'>Continue</button>
+</div>
+
+
+  
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+</html>
